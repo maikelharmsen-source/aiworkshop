@@ -27,14 +27,14 @@ This workflow guides you through adding a new property to the currently open ABL
    - PUBLIC: Readable from anywhere
    - PROTECTED: Readable only from the class and its subclasses
    - PACKAGE-PROTECTED: Readable from within the class, any class within its package, and from within any subclass
-   - PACKAGE-PRIVATE: Readable from within the class and any class within its package
+   - PACKAGE-PRIVATE: Readable only from within the class and any class within its package
    - PRIVATE: Readable only from within the class
 
 4. **Select Property Access Level for SET**
    - PUBLIC: Writable from anywhere
    - PROTECTED: Writable only from the class and its subclasses
    - PACKAGE-PROTECTED: Writable from within the class, any class within its package, and from within any subclass
-   - PACKAGE-PRIVATE: Writable from within the class and any class within its package
+   - PACKAGE-PRIVATE: Writable only from within the class and any class within its package
    - PRIVATE: Writable only from within the class (recommended for encapsulation)
    - NONE: Read-only property (no setter)
 

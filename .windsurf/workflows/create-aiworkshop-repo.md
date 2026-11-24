@@ -175,6 +175,6 @@ mcp3_push_files({
 })
 
 // BAD - Individual pushes (slow)
-mcp3_push_files({files: [{path: "src/CustomerWin.w", content: "..."}]});
-mcp3_push_files({files: [{path: "src/ItemWin.w", content: "..."}]});
+mcp3_push_files({files: [{path: "src/CustomerWin.w", content: "..."}]})
+mcp3_push_files({files: [{path: "src/ItemWin.w", content: "..."}]})
 ```

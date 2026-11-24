@@ -28,7 +28,7 @@ This workflow guides you through creating a new ABL class with proper structure,
    - No inheritance is also an option
 
 4. **Select Interfaces to Implement**
-   - Choose which interfaces the class should implement
+   - Decide which interfaces the class should implement
    - Can be standard interfaces or custom interfaces
    - No interfaces is also an option
 
