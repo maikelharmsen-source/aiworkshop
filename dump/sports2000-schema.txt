@@ -1,0 +1,65 @@
+Sports2000 schema overview
+=========================
+Source: ProjectGengar Step-16 dump/sports2000.df.
+
+This is an informational summary, NOT a loadable OpenEdge .df file.
+No database records, binary database files, or full field/index definitions
+are included in this repository export.
+
+Tables (25)
+-----------
+Benefits
+BillTo
+Bin
+Customer
+Department
+Employee
+Family
+Feedback
+InventoryTrans
+Invoice
+Item
+LocalDefault
+Order
+OrderLine
+POLine
+PurchaseOrder
+RefCall
+Salesrep
+ShipTo
+State
+Supplier
+SupplierItemXref
+TimeSheet
+Vacation
+Warehouse
+
+Sequences (13)
+--------------
+NextCustNum
+NextInvNum
+NextOrdNum
+NextItemNum
+NextRefNum
+NextVisitor
+NextSupplNum
+NextLocalDefNum
+NextWareNum
+NextBinNum
+NextPONum
+NextEmpNum
+NextInvTransNum
+
+Workshop usage
+--------------
+The customer entity reads and updates Customer records using CustNum and
+Name. Its dataset includes customer contact, address, credit, balance,
+terms, discount, and comment fields.
+The original item window reads Item by ItemNum and updates Price; it also
+uses OnHand to validate the total stock value.
+
+Create a local Sports2000 sample database using the build.xml 'db' target
+(ant db) with OpenEdge and PCT installed. Export the complete schema from
+that database to dump/sports2000.df before relying on the schemaFile setting
+or the Windsurf database rule. Use the complete schema, not this summary,
+for field types, indexes, constraints, or generating database-aware code.
